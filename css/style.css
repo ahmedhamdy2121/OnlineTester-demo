@@ -1,0 +1,11 @@
+.label-align {
+    vertical-align: sub !important;
+}
+
+.raw-separator {
+    min-height: 35px !important;
+}
+
+.button-separator {
+    min-height: 15px !important;
+}

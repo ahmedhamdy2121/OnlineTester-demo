@@ -26,6 +26,7 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -93,36 +94,50 @@
                             <input type="hidden" name="year" value="1">                         
                             <div class="container">
                                 <div class="row">
-                                  <div class="col-md-2 col-sm-3 col-xs-12">Repository:</div>
-                                  <div class="col-md-10 col-sm-9 col-xs-12">
-                                    <select name="repo" id="selectedRepository">
-                                        <option value="repo1">Student 1</option>
-                                        <option value="repo2">Student 2</option>
-                                        <option value="repo3">Student 3</option>                             
-                                    </select>
-                                  </div>
-                                  <div class="col-md-2 col-sm-3 col-xs-12">Branch:</div>
-                                  <div class="col-md-10 col-sm-9 col-xs-12">
-                                    <select name="branch" id="selectedBranch">
-                                        <option value="master">master</option>
-                                        <option value="project1">branch1</option>
-                                        <option value="project2">branch2</option>                                 
-                                    </select>
-                                  </div>
-                                  <div class="col-md-2 col-sm-3 col-xs-12">Project (Optional):</div>
-                                  <div class="col-md-10 col-sm-9 col-xs-12">
-                                    <input type="text" name="proj" class="line" placeholder="project name"></input>
-                                  </div>
-                                  <div class="col-md-2 col-sm-3 col-xs-12">Test Suite:</div>
-                                  <div class="col-md-10 col-sm-9 col-xs-12">
-                                    <select name="test" id="selectedTest">
-                                        <option value="project1">project1</option>
-                                        <option value="project2">project2</option>
-                                        <option value="project3">project3</option>                            
-                                    </select>
-                                  </div>
+                                    <div class="col-md-2 col-sm-3 col-xs-12">
+                                        <label class="control-label label-align" for="selectedRepository">Repository:</label>
+                                    </div>
+                                    <div class="col-md-10 col-sm-9 col-xs-12">
+                                        <select name="repo" id="selectedRepository" class="form-control input-sm">
+                                            <option value="repo1">Student 1</option>
+                                            <option value="repo2">Student 2</option>
+                                            <option value="repo3">Student 3</option>                             
+                                        </select>
+                                    </div>
+                                    <div class="raw-separator"></div>
+                                    <div class="col-md-2 col-sm-3 col-xs-12">
+                                        <label class="control-label label-align" for="selectedBranch">Branch:</label>
+                                    </div>
+                                    <div class="col-md-10 col-sm-9 col-xs-12">
+                                        <select name="branch" id="selectedBranch" class="form-control input-sm">
+                                            <option value="master">master</option>
+                                            <option value="project1">branch1</option>
+                                            <option value="project2">branch2</option>                                 
+                                        </select>
+                                    </div>
+                                    <div class="raw-separator"></div>
+                                    <div class="col-md-2 col-sm-3 col-xs-12">
+                                        <label class="control-label label-align" for="optionalProject">Project (Optional):</label>
+                                    </div>
+                                    <div class="col-md-2 col-sm-3 col-xs-12"></div>
+                                    <div class="col-md-10 col-sm-9 col-xs-12">
+                                        <input type="text" name="proj" id="optionalProject" class="form-control input-sm" placeholder="project name"></input>
+                                    </div>
+                                    <div class="raw-separator"></div>
+                                    <div class="col-md-2 col-sm-3 col-xs-12">
+                                        <label class="control-label label-align" for="selectedTest">Test Suite:</label>
+                                    </div>
+                                    <div class="col-md-2 col-sm-3 col-xs-12"></div>
+                                    <div class="col-md-10 col-sm-9 col-xs-12">
+                                        <select name="test" id="selectedTest" class="form-control input-sm">
+                                            <option value="project1">project1</option>
+                                            <option value="project2">project2</option>
+                                            <option value="project3">project3</option>                            
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="button-separator"></div>
                             <div class="col-xs-12 text-center">
                                 <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#demoModal"><i class="fa fa-fire wow bounceIn"></i>  Run Test</button>
                                 <button type="button" class="btn btn-success" data-toggle="modal" data-target="#helpModal"><i class="fa fa-question wow bounceIn"></i> Help</button>
@@ -154,10 +169,10 @@
           </div>
           <div class="bs-callout bs-callout-success">
                 <ol>
-                    <li>Push all your code to your Bitbucket
-                    <li>Select your repository and the branch from the drop-down lists
-                    <li>If you have multiple projects in the same branch, please enter the project name you want to test in the second text box
-                    <li>Choose the JUnit test suite
+                    <li>Push all your code to your Bitbucket, follow <a target="_blank" href="img/Correct Repo.PNG">this design</a>.
+                    <li>Select your repository and the branch from the drop-down lists.
+                    <li>If you have multiple projects in the same branch, please enter the project name you want to test in the second text box.
+                    <li>Choose the JUnit test suite.
                     <li>Press the "Run Test" button, and get surprised :p
                 </ol>
            </div>
@@ -180,11 +195,11 @@
                   This is a demo for the actual Online Tester, so no testing will run.</br>
                   This is how the next page should look like:</br>
                   <ol>
-                    <li><a target="_blank" href="https://photos.app.goo.gl/YLYf8BHcifEkW6yD7">Checkout & CheckStyle.jpg</a>
-                    <li><a target="_blank" href="https://photos.app.goo.gl/97AWsJfj5qJBCsoC6">Compilation & Testing.jpg</a>
-                    <li><a target="_blank" href="https://photos.app.goo.gl/ekBohx2ZBmxujXjc8">Unsafe Code.jpg</a>
+                    <li><a target="_blank" href="img/Checkout & CheckStyle.png">Checkout & CheckStyle.jpg</a>
+                    <li><a target="_blank" href="img/Compilation & Testing.png">Compilation & Testing.jpg</a>
+                    <li><a target="_blank" href="img/Unsafe Code.jpg">Unsafe Code.jpg</a>
                 </ol>
-                And this is how the Plagiarism page will alert me: <a target="_blank" href="https://photos.app.goo.gl/htpjsnTdjfCAnRkE6">Plagiarism.jpg</a>
+                And this is how the Plagiarism page will alert me: <a target="_blank" href="img/Plagiarism.jpg">Plagiarism.jpg</a>
              </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
