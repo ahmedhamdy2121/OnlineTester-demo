@@ -39,3 +39,5 @@ Java, JSP, Threads Programming, Dynamic Compilation, Reflection, JUnit, Tomcat, 
 - The Online Tester shows the compilation or runtime errors to the student, so he/she can debug the issue locally and resubmit their code.
 - The Online Tester shows some statistics.
 - The Online Tester shows grading page with all of the student work during the semester.
+- Student will gain more experience in using git an its basics.
+- It will encourage students to compete by seeing the grades as a Leaderboard.
