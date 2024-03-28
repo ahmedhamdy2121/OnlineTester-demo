@@ -1,5 +1,5 @@
 # OnlineTester
-This repository service as a demo landing page for the Online Tester. 
+This repository services as a demo landing page for the Online Tester. 
 
 The Online Tester is an educational website for java code unit testing and grading automation as part of the TDD process.
 
